@@ -135,6 +135,7 @@
     "interval": 10,
     "exec": "~/.config/waybar/scripts/waybar-ddcutil.py",
     "on-click": "ddcutil setvcp 10 --bus 14 0",
+    "on-click-middle": "ddcutil setvcp 10 --bus 14 50",
     "on-click-right": "ddcutil setvcp 10 --bus 14 75",
     "on-scroll-up": "~/.config/waybar/scripts/set-ddcutil.py '+' '10'",
     "on-scroll-down": "~/.config/waybar/scripts/set-ddcutil.py '-' '10'",
@@ -142,6 +143,7 @@
   },
   "backlight": {
       "on-click": "brightnessctl s 0",
+      "on-click-middle": "brightnessctl s 50",
       "on-click-right": "brightnessctl s 75",
       "format": "{percent}% {icon}",
       "format-icons": ["", ""],
