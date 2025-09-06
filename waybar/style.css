@@ -23,13 +23,16 @@ window#waybar.hidden {
 #temperature,
 #tray,
 #idle_inhibitor,
-#backlight,
-#custom-ddcutil,
-#pulseaudio,
-#pulseaudio-slider,
+#custom-night,
+#custom-night.light,
+#custom-night.dark,
 #battery,
 #battery.warn,
 #battery.crit,
+#custom-ddcutil,
+#backlight,
+#pulseaudio,
+#pulseaudio-slider,
 #network,
 #language,
 #group-power,
@@ -152,6 +155,21 @@ window#waybar.hidden {
 #idle_inhibitor {
   background: #B5E8E0;
   padding-right: 13px;
+}
+
+#custom-night {
+  background: #e2daf5;
+  color: #000000; 
+}
+
+#custom-night.light {
+  background: #e2daf5;
+  color: #000000; 
+}
+
+#custom-night.dark {
+  background: #000000;
+  color: #e2daf5;
 }
 
 #battery {
